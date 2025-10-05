@@ -5,6 +5,8 @@ import Services from "./components/services";
 import AboutSection from './components/about';
 import ContactSection from "./components/ContactSection";
 import ProjectsSection from "./components/ProjectSection";
+import AchievementsSection from "./components/AchievementsSection";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -13,8 +15,10 @@ export default function Home() {
     <HeroSection />
     <Services />
     <AboutSection />
+    <AchievementsSection />
     <ProjectsSection />
     <ContactSection />
+    <Footer />
     </> 
      );
 }
