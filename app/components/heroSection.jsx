@@ -8,9 +8,8 @@ import { FaWhatsapp, FaArrowDown } from 'react-icons/fa';
 const HeroSection = () => {
   return (
     // "min-h-screen": لجعل القسم يملأ الشاشة بالطول.
-    // "flex items-center justify-center": لتوسيط المحتوى رأسيًا وأفقيًا.
-    <section className='min-h-screen bg-black flex items-center justify-center p-4'>
-      
+    // "flex items-center justify-center": لتوسيع المحتوى رأسيًا وأفقيًا.
+    <section className='min-h-screen bg-black flex items-center justify-center pt-28 pb-12 px-4 md:pt-20'>
       {/* حاوية المحتوى الرئيسية */}
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl mx-auto'>
         
