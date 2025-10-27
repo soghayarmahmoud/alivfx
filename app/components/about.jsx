@@ -58,12 +58,26 @@ const AboutSection = () => {
 
   return (
     // ٢. تم تعديل الألوان والتباعد ليتناسب مع التصميم العام
-    <section className="text-white py-16" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about.jpg" width={500} height={500} alt="about me section" className="rounded-2xl"/>
+    <section className="relative text-white py-20 bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden" id="about">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl top-20 right-10 animate-pulse"></div>
+      </div>
+
+      <div className="md:grid md:grid-cols-2 gap-12 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 max-w-7xl mx-auto relative z-10">
+        <div className="relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+          <Image src="/images/about.jpg" width={500} height={500} alt="about me section" className="relative rounded-2xl shadow-2xl"/>
+        </div>
         <div className="mt-8 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg text-gray-400" dir="rtl">
+          <div className="inline-block mb-4">
+            <span className="bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm font-semibold border border-cyan-500/20">
+              👋 About Me
+            </span>
+          </div>
+          <h2 className="text-5xl font-extrabold text-white mb-6">About Me</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mb-6"></div>
+          <p className="text-base lg:text-lg text-gray-300 leading-relaxed" dir="rtl">
             بساعد صناع المحتوى والعلامات التجارية على تحويل أفكارهم لفيديوهات جذابة تنجح في جذب الانتباه وتوصيل الرسالة. بمزج بين الخبرة، السرعة، والإبداع علشان كل فيديو يطلع بتجربة بصرية فريدة تستحق المشاركة.
           </p>
           

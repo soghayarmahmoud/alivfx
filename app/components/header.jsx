@@ -15,8 +15,8 @@ const Header = () => {
 
   return (
     // التعديلات الرئيسية هنا: غيرنا الخلفية والظل
-    <header className="fixed left-0 top-0 w-full z-20 bg-black/80 backdrop-blur-md shadow-lg shadow-blue-500/10">
-      <div className="max-w-6xl mx-auto flex justify-between items-center p-4 text-white">
+    <header className="fixed left-0 top-0 w-full z-50 bg-black/90 backdrop-blur-lg shadow-2xl shadow-blue-500/10 border-b border-gray-800/50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center p-4 text-white">
         {/* === اللوجو أو اسمك === */}
         <Link href="/">
           {/* استخدمنا نفس تدرج الألوان الموجود في الـ Hero Section */}

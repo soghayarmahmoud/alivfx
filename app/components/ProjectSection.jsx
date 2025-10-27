@@ -44,21 +44,40 @@ const projectData = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-20 px-4">
-      <h2 className="text-center text-5xl font-extrabold text-white mt-4 mb-12">
-        My Projects
-        <div className="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
-      </h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        {projectData.map((project) => (
-          <ProjectCard 
-            key={project.id} 
-            title={project.title} 
-            description={project.description} 
-            instaUrl={project.insta} 
-            imgUrl={project.image} // <-- تأكد من تمرير هذا السطر
-          />
-        ))}
+    <section id="projects" className="relative py-20 px-4 bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute w-96 h-96 bg-blue-500/5 rounded-full blur-3xl top-20 left-20 animate-pulse"></div>
+        <div className="absolute w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl bottom-20 right-20 animate-pulse delay-1000"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-block mb-4">
+            <span className="bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm font-semibold border border-cyan-500/20">
+              🎬 Portfolio
+            </span>
+          </div>
+          <h2 className="text-5xl font-extrabold text-white mb-4">
+            My Projects
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full mb-4"></div>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            مجموعة من أعمالي المميزة التي تعكس شغفي بالإبداع والتميز
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectData.map((project) => (
+            <ProjectCard 
+              key={project.id} 
+              title={project.title} 
+              description={project.description} 
+              instaUrl={project.insta} 
+              imgUrl={project.image} // <-- تأكد من تمرير هذا السطر
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

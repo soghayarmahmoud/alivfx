@@ -6,8 +6,11 @@ import { FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 border-t border-gray-700/50 text-white">
-      <div className="max-w-6xl mx-auto py-8 px-4 flex flex-col items-center">
+    <footer className="relative bg-gradient-to-b from-gray-900 to-black border-t border-gray-800/50 text-white overflow-hidden">
+      {/* Decorative gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-cyan-500/5 pointer-events-none"></div>
+      
+      <div className="max-w-6xl mx-auto py-12 px-4 flex flex-col items-center relative z-10">
         {/* === الاسم أو اللوجو === */}
         <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-500 mb-4">
           Ali Abdelhameed
