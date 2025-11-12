@@ -83,7 +83,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="border-b border-gray-700">
-                <p className="py-4 text-gray-400">Web Developer & Designer</p>
+                <p className="py-4 text-gray-400">Video Editor & Content Creator</p>
               </div>
             </div>
             <div className="py-4 flex flex-col">

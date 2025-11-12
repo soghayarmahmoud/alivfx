@@ -4,9 +4,9 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
 const achievementsList = [
-  { metric: "Projects", value: "100", postfix: "+" },
+  { metric: "Projects", value: "200", postfix: "+" },
   { metric: "Happy Clients", value: "50", postfix: "+" },
-  { metric: "Years", value: "4" },
+  { metric: "Years", value: "1", postfix: "+" },
 ];
 
 const AchievementsSection = () => {

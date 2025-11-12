@@ -27,28 +27,24 @@ const servicesData = [
   {
     icon: <RiScissorsCutFill size={50} className="mx-auto text-cyan-400" />,
     title: 'مونتاج فيديوهات قصيرة (Reels)',
-    description: 'إنشاء فيديوهات Reels سريعة ومؤثرة لمنصات TikTok, Instagram, و YouTube Shorts لجذب الانتباه وزيادة التفاعل.',
+    description: 'مونتاج فيديوهات قصيرة احترافية وجذابة ',
   },
   {
     icon: <MdColorLens size={50} className="mx-auto text-cyan-400" />,
     title: 'تلوين وتصحيح الألوان',
-    description: 'تعديل ألوان الفيديو لإعطاء طابع سينمائي أو لتوحيد اللقطات المختلفة снята بكاميرات متنوعة.',
+    description: 'تحسين الألوان والتباين لإضفاء مظهر سينمائي واحترافي على مقاطع الفيديو الخاصة بك.',
   },
   {
     icon: <MdGraphicEq size={50} className="mx-auto text-cyan-400" />,
     title: 'هندسة ومؤثرات صوتية',
-    description: 'تنقية الصوت، إضافة مؤثرات صوتية، وموسيقى تصويرية مناسبة لرفع جودة الفيديو النهائية.',
+    description: 'تحسين جودة الصوت ، وإضافة مؤثرات صوتية احترافية .',
   },
   {
     icon: <FaPhotoVideo size={50} className="mx-auto text-cyan-400" />,
     title: 'إعلانات سوشيال ميديا',
     description: 'مونتاج إعلانات قصيرة وموجهة لمنصات التواصل الاجتماعي لتحقيق أفضل النتائج التسويقية.',
   },
-  {
-    icon: <FaYoutube size={50} className="mx-auto text-cyan-400" />,
-    title: 'إدارة محتوى يوتيوب',
-    description: 'المساعدة في جدولة المحتوى، إنشاء صور مصغرة (Thumbnails) جذابة، وكتابة عناوين فعالة.',
-  },
+
 ];
 
 
