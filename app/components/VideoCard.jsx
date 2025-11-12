@@ -15,7 +15,13 @@ const VideoCard = ({ title, description, videoUrl }) => {
         </div>
         
         <div className="relative aspect-square w-full max-w-[328px] mx-auto bg-black">
-          <video src={videoUrl} controls className="w-full h-full object-cover" playsInline />
+          {/* Using the <source> tag is a best practice for compatibility. */}
+          {/* It allows you to provide multiple video formats. */}
+          <video controls muted className="w-full h-full object-cover" playsInline loop>
+            <source src={videoUrl} type="video/mp4" />
+            <source src={videoUrl.replace('.mp4', '.webm')} type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
 
