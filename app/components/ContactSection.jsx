@@ -55,42 +55,6 @@ const ContactSection = () => {
           تواصل معي ودعنا نبدأ.
         </p>
 
-        {/* === أيقونات السوشيال ميديا === */}
-        <div className="flex justify-center items-center gap-8">
-          <Link 
-            href="https://www.instagram.com/engali.vfx?igsh=MTdsOTY2OHM5eDY2ZQ==" 
-            target="_blank" 
-            className="text-gray-400 hover:text-[#E1306C] transition-all duration-300 transform hover:scale-110"
-            aria-label="Instagram Profile"
-          >
-            <FaInstagram size={44} />
-          </Link>
-
-          <Link 
-            href="https://wa.me/201095054714" 
-            target="_blank" 
-            className="text-gray-400 hover:text-[#25D366] transition-all duration-300 transform hover:scale-110"
-            aria-label="WhatsApp Chat"
-          >
-            <FaWhatsapp size={44} />
-          </Link>
-           <Link 
-            href="https://www.tiktok.com/@engalivfx?_r=1&_t=ZS-91LAUET0A1Q" 
-            target="_blank" 
-            className="text-gray-400 hover:text-[#43166bd6] transition-all duration-300 transform hover:scale-110"
-            aria-label="TikTok Profile"
-          >
-            <FaTiktok size={44} />
-          </Link>
-          <Link 
-            href="https://youtube.com/@engalivfx?si=Pte6CDyFvVH4MUiQ" 
-            target="_blank" 
-            className="text-gray-400 hover:text-[#FF0000] transition-all duration-300 transform hover:scale-110"
-            aria-label="Youtube Channel"
-          >
-            <FaYoutube size={44} />
-          </Link>
-        </div>
       </motion.div>
     </section>
   );
