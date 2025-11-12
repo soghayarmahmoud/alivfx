@@ -9,6 +9,7 @@ import AchievementsSection from "./components/AchievementsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import CTASection from "./components/CTASection";
 import Footer from "./components/footer";
+import CompaniesSection from "./components/CompaniesSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
     <AboutSection />
     <AchievementsSection />
     <ProjectsSection />
+    <CompaniesSection />
     <TestimonialsSection />
     <CTASection />
     <ContactSection />

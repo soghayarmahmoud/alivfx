@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaYoutube , FaTiktok} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -19,14 +19,22 @@ const Footer = () => {
         {/* === أيقونات السوشيال ميديا === */}
         <div className="flex justify-center items-center gap-6 mb-6">
           <Link 
-            href="https://www.instagram.com/engali.vfx?igsh=MTdsOTY2OHM5eDY2ZQ==" 
+            href="https://www.instagram.com/engalivfx?igsh=MTdsOTY2OHM5eDY2ZQ==" 
             target="_blank" 
             className="text-gray-400 hover:text-[#E1306C] transition-all duration-300 transform hover:scale-110"
             aria-label="Instagram Profile"
           >
             <FaInstagram size={28} />
           </Link>
+          <Link 
+            href="https://www.tiktok.com/@engalivfx?_r=1&_t=ZS-91LAUET0A1Q" 
+            target="_blank" 
+            className="text-gray-400 hover:text-[#43166bd6] transition-all duration-300 transform hover:scale-110"
+            aria-label="TikTok Profile"
+          >
+            <FaTiktok size={28} />
 
+          </Link>
           <Link 
             href="https://wa.me/201095054714" 
             target="_blank" 

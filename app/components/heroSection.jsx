@@ -58,10 +58,10 @@ const HeroSection = () => {
 
         {/* === قسم الصورة === */}
         <div className='col-span-12 lg:col-span-5 place-self-center mt-8 lg:mt-0'>
-          <div className='rounded-full w-[250px] h-[250px] lg:w-[320px] lg:h-[320px] relative bg-gradient-to-br from-blue-600 via-cyan-500 to-gray-900 p-1 transition-transform duration-300 hover:scale-105'>
+          <div className='rounded-full w-[250px] h-[250px] lg:w-[320px] lg:h-[320px] relative bg-gradient-to-br from-blue-600 via-cyan-500 to-gray-900 p-1 transition-transform duration-300 hover:scale-105 shadow-2xl shadow-cyan-500/40 hover:shadow-blue-500/60'>
               <Image
                 className='rounded-full'
-                src="/images/l.jpg"
+                src="/images/logo.jpg"
                 alt='profile image'
                 layout='fill'
                 objectFit='cover'

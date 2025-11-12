@@ -45,7 +45,7 @@ const testimonialsData = [
   },
   {
     id: 5,
-    name: "Bebo K",
+    name: "Mahmoud E. Mohammed",
     role: "Content Creator",
     image: "/images/client5.jpg",
     rating: 5,

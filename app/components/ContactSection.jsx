@@ -5,7 +5,7 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
 // استيراد الأيقونات الاحترافية
-import { FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaYoutube, FaTiktok } from 'react-icons/fa';
 // استيراد أدوات الأنيميشن
 import { motion, useInView } from 'framer-motion';
 
@@ -74,7 +74,14 @@ const ContactSection = () => {
           >
             <FaWhatsapp size={44} />
           </Link>
-          
+           <Link 
+            href="https://www.tiktok.com/@engalivfx?_r=1&_t=ZS-91LAUET0A1Q" 
+            target="_blank" 
+            className="text-gray-400 hover:text-[#43166bd6] transition-all duration-300 transform hover:scale-110"
+            aria-label="TikTok Profile"
+          >
+            <FaTiktok size={44} />
+          </Link>
           <Link 
             href="https://youtube.com/@engalivfx?si=Pte6CDyFvVH4MUiQ" 
             target="_blank" 

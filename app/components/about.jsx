@@ -64,12 +64,8 @@ const AboutSection = () => {
         <div className="absolute w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl top-20 right-10 animate-pulse"></div>
       </div>
 
-      <div className="md:grid md:grid-cols-2 gap-12 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 max-w-7xl mx-auto relative z-10">
-        <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
-          <Image src="/images/about.jpg" width={500} height={500} alt="about me section" className="relative rounded-2xl shadow-2xl"/>
-        </div>
-        <div className="mt-8 md:mt-0 text-left flex flex-col h-full">
+      <div className="items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 max-w-7xl mx-auto relative z-10">
+        <div className="mt-8 md:mt-0 text-left flex flex-col h-full md:w-full">
           <div className="inline-block mb-4">
             <span className="bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm font-semibold border border-cyan-500/20">
               👋 About Me
