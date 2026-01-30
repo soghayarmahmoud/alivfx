@@ -70,12 +70,15 @@ const ShowreelSection = () => {
                 >
                     <div className={`relative w-[280px] h-[500px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${positions.farLeft === centerIndex ? 'border-2 border-cyan-400/50' : 'border border-white/10'}`}>
                         <video
+                            key={videos[positions.farLeft].src}
                             autoPlay
                             loop
                             muted
                             playsInline
                             className="w-full h-full object-cover"
                             preload="auto"
+                            onError={(e) => console.error('Video error (farLeft):', videos[positions.farLeft].src, e)}
+                            onLoadedData={() => console.log('Video loaded (farLeft):', videos[positions.farLeft].src)}
                         >
                             <source src={videos[positions.farLeft].src} type="video/mp4" />
                         </video>
@@ -103,12 +106,15 @@ const ShowreelSection = () => {
                 >
                     <div className={`relative w-[320px] h-[580px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${positions.midLeft === centerIndex ? 'border-2 border-cyan-400/50' : 'border border-white/10'}`}>
                         <video
+                            key={videos[positions.midLeft].src}
                             autoPlay
                             loop
                             muted
                             playsInline
                             className="w-full h-full object-cover"
                             preload="auto"
+                            onError={(e) => console.error('Video error (midLeft):', videos[positions.midLeft].src, e)}
+                            onLoadedData={() => console.log('Video loaded (midLeft):', videos[positions.midLeft].src)}
                         >
                             <source src={videos[positions.midLeft].src} type="video/mp4" />
                         </video>
@@ -134,12 +140,15 @@ const ShowreelSection = () => {
                 >
                     <div className="relative w-[420px] h-[650px] rounded-3xl overflow-hidden shadow-2xl border-2 border-cyan-400/50">
                         <video
+                            key={videos[positions.center].src}
                             autoPlay
                             loop
                             muted
                             playsInline
                             className="w-full h-full object-cover"
                             preload="auto"
+                            onError={(e) => console.error('Video error (center):', videos[positions.center].src, e)}
+                            onLoadedData={() => console.log('Video loaded (center):', videos[positions.center].src)}
                         >
                             <source src={videos[positions.center].src} type="video/mp4" />
                         </video>
@@ -166,12 +175,15 @@ const ShowreelSection = () => {
                 >
                     <div className={`relative w-[320px] h-[580px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${positions.midRight === centerIndex ? 'border-2 border-cyan-400/50' : 'border border-white/10'}`}>
                         <video
+                            key={videos[positions.midRight].src}
                             autoPlay
                             loop
                             muted
                             playsInline
                             className="w-full h-full object-cover"
                             preload="auto"
+                            onError={(e) => console.error('Video error (midRight):', videos[positions.midRight].src, e)}
+                            onLoadedData={() => console.log('Video loaded (midRight):', videos[positions.midRight].src)}
                         >
                             <source src={videos[positions.midRight].src} type="video/mp4" />
                         </video>
@@ -199,12 +211,15 @@ const ShowreelSection = () => {
                 >
                     <div className={`relative w-[280px] h-[500px] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ${positions.farRight === centerIndex ? 'border-2 border-cyan-400/50' : 'border border-white/10'}`}>
                         <video
+                            key={videos[positions.farRight].src}
                             autoPlay
                             loop
                             muted
                             playsInline
                             className="w-full h-full object-cover"
                             preload="auto"
+                            onError={(e) => console.error('Video error (farRight):', videos[positions.farRight].src, e)}
+                            onLoadedData={() => console.log('Video loaded (farRight):', videos[positions.farRight].src)}
                         >
                             <source src={videos[positions.farRight].src} type="video/mp4" />
                         </video>
@@ -237,12 +252,15 @@ const ShowreelSection = () => {
                                 : 'border border-white/20'
                                 }`}>
                                 <video
+                                    key={video.src}
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
                                     className="w-full h-full object-cover"
                                     preload="auto"
+                                    onError={(e) => console.error('Video error (mobile):', video.src, e)}
+                                    onLoadedData={() => console.log('Video loaded (mobile):', video.src)}
                                 >
                                     <source src={video.src} type="video/mp4" />
                                 </video>
