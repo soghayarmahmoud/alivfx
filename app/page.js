@@ -5,9 +5,9 @@ import ShowreelSection from "./components/ShowreelSection";
 import Services from "./components/services";
 import AboutSection from './components/about';
 import LongFormVideos from "./components/LongFormVideos";
+import ShortFormVideos from "./components/ShortFormVideos";
 import Courses from "./components/Courses";
 import ContactSection from "./components/ContactSection";
-import ProjectsSection from "./components/ProjectSection";
 import AchievementsSection from "./components/AchievementsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import CTASection from "./components/CTASection";
@@ -23,9 +23,9 @@ export default function Home() {
       <Services />
       <AboutSection />
       <LongFormVideos />
+      <ShortFormVideos />
       <Courses />
       <AchievementsSection />
-      <ProjectsSection />
       <CompaniesSection />
       <TestimonialsSection />
       <CTASection />

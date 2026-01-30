@@ -43,7 +43,7 @@ const LongFormVideos = () => {
                         </span>
                     </div>
                     <h2 className="text-5xl font-extrabold text-white mb-4">
-                        Featured Videos
+                        Long Form Videos
                     </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full mb-4 shadow-glow-gradient"></div>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
