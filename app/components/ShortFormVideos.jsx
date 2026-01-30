@@ -15,8 +15,8 @@ const ShortFormVideos = () => {
         {
             id: 1,
             title: "Short Form Reel 1",
-            description: "Engaging short-form content",
-            video: "/vids/reals/1.mp4",
+            description: "Trending style content",
+            video: "/vids/reals/4.mp4",
         },
         {
             id: 2,
@@ -34,7 +34,7 @@ const ShortFormVideos = () => {
             id: 4,
             title: "Short Form Reel 4",
             description: "Trending style content",
-            video: "/vids/reals/4.mp4",
+            video: "/vids/reals/1.mp4",
         },
         {
             id: 5,
