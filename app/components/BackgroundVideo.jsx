@@ -42,7 +42,7 @@ const BackgroundVideo = ({
 
     return (
         <div
-            className={`absolute top-0 ${positionClass} h-full w-full md:w-1/3 overflow-hidden ${className}`}
+            className={`absolute top-0 ${positionClass} h-full w-[45%] md:w-1/3 overflow-hidden ${className}`}
             style={{
                 opacity: opacity,
                 pointerEvents: 'none' // Ensures video doesn't interfere with interactions

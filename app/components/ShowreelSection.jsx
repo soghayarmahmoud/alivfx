@@ -56,7 +56,7 @@ const ShowreelSection = () => {
             </div>
 
             {/* Pyramid Gallery Container */}
-            <div className="relative z-10 w-full h-[700px] max-w-[1600px] mx-auto flex items-center justify-center" style={{ perspective: '1500px' }}>
+            <div className="relative z-10 w-full h-[700px] max-w-[1600px] mx-auto items-center justify-center hidden md:flex" style={{ perspective: '1500px' }}>
 
                 {/* Video 1 - Far Left */}
                 <div
@@ -222,24 +222,56 @@ const ShowreelSection = () => {
 
             </div>
 
-            {/* Navigation Dots */}
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-50">
-                {videos.map((video, index) => (
-                    <button
-                        key={video.id}
-                        onClick={() => handleVideoClick(index)}
-                        className={`
-              transition-all duration-300
-              ${index === centerIndex
-                                ? 'w-12 h-3 bg-gradient-to-r from-blue-500 to-cyan-500 shadow-glow-gradient'
-                                : 'w-3 h-3 bg-white/30 hover:bg-white/50'
-                            }
-              rounded-full
-            `}
-                        aria-label={`View ${video.title}`}
-                    />
-                ))}
+            {/* Mobile Layout - Show all videos in horizontal scroll */}
+            <div className="md:hidden relative z-10 w-full px-4 py-8">
+                <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
+                    {videos.map((video, index) => (
+                        <div
+                            key={video.id}
+                            onClick={() => handleVideoClick(index)}
+                            className={`flex-shrink-0 group cursor-pointer transition-all duration-500 snap-start ${index === centerIndex ? 'scale-105' : 'scale-100'
+                                }`}
+                        >
+                            <div className={`relative w-[150px] h-[250px] rounded-xl overflow-hidden shadow-2xl transition-all duration-500 ${index === centerIndex
+                                ? 'border-2 border-cyan-400/70 shadow-cyan-400/50'
+                                : 'border border-white/20'
+                                }`}>
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="w-full h-full object-cover"
+                                    preload="auto"
+                                >
+                                    <source src={video.src} type="video/mp4" />
+                                </video>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                                {/* Featured badge for mobile */}
+                                {index === centerIndex && (
+                                    <div className="absolute top-2 left-2 bg-cyan-500/90 backdrop-blur-sm px-2 py-1 rounded-full text-white font-bold text-xs">
+                                        Featured
+                                    </div>
+                                )}
+
+                                {/* Video number indicator */}
+                                <div className="absolute bottom-2 left-2 right-2 text-white text-xs font-semibold text-center">
+                                    Video {index + 1}
+                                </div>
+
+                                <div className="absolute -inset-2 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 blur-xl -z-10"></div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Scroll indicator */}
+                <div className="text-center mt-4 text-gray-400 text-sm">
+                    ← Swipe to see all videos →
+                </div>
             </div>
+
         </section>
     );
 };

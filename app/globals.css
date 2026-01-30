@@ -359,6 +359,7 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
 /* Additional Color Glow Shadows */
 .shadow-glow-red {
   box-shadow:
@@ -372,4 +373,14 @@ body {
     0 8px 16px rgba(34, 197, 94, 0.25),
     0 16px 32px rgba(34, 197, 94, 0.2),
     0 0 40px rgba(34, 197, 94, 0.15);
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
