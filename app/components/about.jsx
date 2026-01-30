@@ -67,8 +67,18 @@ const AboutSection = () => {
       <div className="items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 max-w-7xl mx-auto relative z-10">
         <div className="mt-8 md:mt-0 text-left flex flex-col h-full md:w-full">
           <div className="inline-block mb-4">
-            <span className="bg-cyan-500/10 text-cyan-400 px-4 py-2 rounded-full text-sm font-semibold border border-cyan-500/20">
-              👋 About Me
+            {/* Modern Glassmorphic Badge with Floating Animation */}
+            <span className="group relative bg-gradient-to-r from-cyan-500/20 via-cyan-400/15 to-cyan-500/20 backdrop-blur-xl text-cyan-400 px-6 py-3 rounded-full text-sm font-semibold border border-cyan-400/30 shadow-depth-md hover:shadow-depth-lg transition-all duration-500 hover:scale-105 inline-flex items-center gap-2 animate-float overflow-hidden">
+              {/* Gradient glow border effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/50 via-blue-500/50 to-cyan-500/50 rounded-full blur-lg -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Shimmer effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+
+              {/* Inner glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-transparent to-transparent rounded-full"></div>
+
+              <span className="relative z-10">About Me</span>
             </span>
           </div>
           <h2 className="text-5xl font-extrabold text-white mb-6">About Me</h2>
@@ -76,7 +86,7 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg text-gray-300 leading-relaxed" dir="rtl">
             بساعد صناع المحتوى والعلامات التجارية على تحويل أفكارهم لفيديوهات جذابة تنجح في جذب الانتباه وتوصيل الرسالة. بمزج بين الخبرة، السرعة، والإبداع علشان كل فيديو يطلع بتجربة بصرية فريدة تستحق المشاركة.
           </p>
-          
+
           {/* ٣. تم إنشاء الأزرار بشكل ديناميكي بدلاً من التكرار */}
           <div className="flex flex-row mt-8">
             {TAB_DATA.map((tabItem) => (
